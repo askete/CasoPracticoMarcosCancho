@@ -1,0 +1,212 @@
+* {
+    color:#646569
+}
+header {
+    padding-top: 3%;
+    text-align: center;
+
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+
+form ::placeholder {
+    font-size: 14px;
+    font-style: italic;
+}
+.collapse{
+    justify-content: space-around !important;
+}
+
+#form {
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+.formulario__grupo label {
+    font-size: 10px;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    height: 30px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus {
+    border: 3px solid #145da5;
+    outline: none;
+    box-shadow: 3px 0px 30px #c9d1da;
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #d85b5b;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+#env{
+    float: right;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #d85b5b;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+.nav-link {
+    display: inline !important;; 
+}
+.formulario__mensaje-activo {
+    display: block;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.formulario__mensaje p {
+    margin: 0px;
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #66992c;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+li{
+    margin-right: 15px;
+}
+
+label,
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+}
+
+select {
+    height: 31px;
+    font-size: 15px;
+}
+
+input {
+    display: inline;
+    width: auto;
+}
+
+label {
+    margin-top: 20px;
+    width: auto;
+}
+
+.container-fluid {
+    max-width: 1350px;
+}
+
+.container {
+    max-width: 600px;
+
+}
+nav#main-nav ul li a {
+    color: #646569;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    font-weight: 300;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+.ase__btn{
+    background-color: #66992c;
+    border-radius: 28px;
+    border: 0px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px 35px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #437124;
+    box-shadow: 0px 6px 30px #c9d1da;
+}
+.ase__btn:hover{
+color: #646569;
+}
+
+.paso__btn {
+
+    background-color: #66992c;
+    border-radius: 28px;
+    border: 0px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px 35px;
+    margin-top: 5%;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #437124;
+}
+
+.paso__btn:hover {
+    background-color: #437124;
+}
+
+.paso__btn:disabled {
+    background-color: #d0e6a7;
+    cursor: default;
+}
+
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #8dba38;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #d85b5b;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #d85b5b;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #ea7a7a;
+}

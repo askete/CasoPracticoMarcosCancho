@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Prueba técnica resuelve tu deuda</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <header>
+            <!-- Navigation bar with a toggle button for a responsive navigation menu -->
+            <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <img class="logo" src="assets/logo.png" alt="Resuelve Tu Deuda">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Conoce el Programa</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">¿Cómo funciona?</a></li>
+                                <li><a href="#">Beneficios</a></li>
+                                <li><a href="#">Requisitos</a></li>
+                                <li><a href="#">Historias de Éxito</a></li>
+                                <li><a href="#">Preguntas frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Todo sobre Resuelve</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nuestra Cultura </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Vacantes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Economía</a></li>
+                                <li><a href="#">Deudas</a></li>
+                                <li><a href="#">Finanzas personales</a></li>
+                                <li><a href="#">Productos financieros</a></li>
+                                <li><a href="#">Resuelve tu deuda</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacto</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Sucursales</a></li>
+                                <li><a href="#">Platica con nosotros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button id="asesoria" class="ase__btn"> Asesoría Gratis </button>
+
+                </div>
+            </nav>
+
+
+
+        </header>
+
+    </div>
+    <div class="container" id="form">
+
+        <form action="" class="formulario" id="formulario">
+            <!-- Primer paso -->
+            <div id="paso1">
+
+                <div class="formulario__grupo" id="grupo__instituciones">
+                    <label for="instituciones" class="formulario__label">INSTITUCIONES</label>
+                    <div class="border">
+                        <select name="instituciones" id="instituciones">
+                            <option value="bancos">Bancos</option>
+                            <option value="financieras">Financieras</option>
+
+                        </select>
+                    </div>
+                    <label for="lista-instituciones" class="formulario__label">LISTA DE INSTITUCIONES</label>
+                    <div class="border ">
+                        <select name="listainstituciones" id="listainstituciones">
+                            <option value="caixaBank">CaixaBank</option>
+                            <option value="ing">ING</option>
+                            <option value="bbva">BBVA</option>
+                        </select>
+                    </div>
+
+                    <!-- Grupo: Deuda -->
+                    <div class="formulario__grupo" id="grupo__deuda">
+
+                        <label for="deuda" class="formulario__label">*MONTO DEUDA </label>
+                        <div class="formulario__grupo-input">
+                            <input type="number" class="formulario__input" id="deuda" name="deuda"
+                                placeholder="4000€ O más" required>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error">El monto de deuda debe ser mínimo de 4,000 €</p>
+                    </div>
+                </div>
+                <button type="button" id="siguiente" class="paso__btn" disabled>Siguiente</button>
+
+            </div>
+            <!-- Segundo paso -->
+            <div id="paso2" style="display:none;">
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__name">
+                    <label for="name" class="formulario__label">*NOMBRE</label>
+
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" id="name" name="name" placeholder="Nombre"
+                            required />
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Solo se permiten letras y espacios, pueden llevar acentos.
+                    </p>
+                </div>
+
+                <!-- Grupo: Apellido -->
+                <div class="formulario__grupo" id="grupo__fname">
+                    <label for="firstname" class="formulario__label">*APELLIDO PATERNO</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" id="fname" name="fname"
+                            placeholder="Primer apellido" required />
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error"> Solo se permiten letras y espacios, pueden llevar acentos.
+                    </p>
+
+                </div>
+
+                <!-- Grupo: segundo apellido -->
+                <div class="formulario__grupo" id="grupo__lname">
+                    <label for="lname" class="formulario__label">*APELLIDO MATERNO</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" id="lname" name="lname"
+                            pattern="[a-zA-ZÀ-ÿ\s]{1,40}$" placeholder="Segundo apellido" />
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error"> Solo se permiten letras y espacios, pueden llevar acentos.
+                    </p>
+                </div>
+
+                <!-- Grupo: Telefono movil -->
+                <div class="formulario__grupo" id="grupo__phone">
+                    <label for="phone" class="formulario__label">*TELÉFONO MÓVIL</label>
+                    <div class="formulario__grupo-input">
+                        <input type="tel" class="formulario__input" id="phone" name="phone" placeholder="Teléfono"
+                            required />
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error"> Solo puedes escribir 9 números.</p>
+                </div>
+
+
+                <!-- Grupo: email -->
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">*CORREO ELECTRÓNICO</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" id="email" name="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ej.: nombre@dominio.com" />
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error"> Algo falla en el correo.</p>
+
+                </div>
+
+                <button type="button" id="atras" class="paso__btn">Atrás</button>
+
+
+                <button type="submit" id="env" class="paso__btn"disabled>Enviar</button>
+
+
+            </div>
+    </div>
+    </form>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/518d37a212.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
